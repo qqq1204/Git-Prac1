@@ -1,0 +1,15 @@
+*
+**
+
+!include
+!include/*
+!include/**
+
+!src
+!src/*
+!src/**
+
+!.gitignore
+!CMakeLists.txt
+!LICENSE
+!README.md
