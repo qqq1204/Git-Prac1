@@ -16,7 +16,6 @@ ExampleClass::ExampleClass():data_(new impl)
 {
     data_->member_=0;
     std::cout << "Call ExampleClass::ExampleClass()."<<std::endl;
-    std::cout << "hello."<<std::endl;
 }
 
 ExampleClass::~ExampleClass(){
