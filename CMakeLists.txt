@@ -33,3 +33,6 @@ add_library(example SHARED src/package_name/module_name/example.cpp)
 add_executable(example_app src/package_name/app_name/example_app.cpp)
 target_link_libraries(example_app PUBLIC example)
 add_dependencies(example_app example)
+
+# add matrix
+add_executable(matrix src/practice_00/matrix/matrix.cpp)
