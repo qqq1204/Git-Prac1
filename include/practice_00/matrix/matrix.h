@@ -137,14 +137,18 @@ public:
     ///
     void SetIdentity()
     {
-        /// \todo write code here.
+        for (int i = 0; i < rows; i++)
+            for (int j = 0; j < cols; j++)
+                if (i == j) data_[cols * i + j] = 1;
+                else data_[cols * i + j] = 0;
     }
-
+             
     /// \brief Set this matrix as zero matrix.
     ///
     void SetZero()
     {
-        /// \todo write code here.
+        for (unsigned int i = 0; i < cols * rows; i++)
+            data_[i] = 0;
     }
 
 private:
