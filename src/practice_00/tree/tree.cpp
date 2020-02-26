@@ -3,6 +3,7 @@
 #include <stack>
 #include <queue>
 #include <atomic>
+#include <iostream>
 
 namespace practice_00
 {
@@ -57,6 +58,11 @@ bool Node::ForEachDFS(AbstractNodeIterableFunctor *func)
 bool Node::ForEachIDS(AbstractNodeIterableFunctor *func)
 {
     ///\todo iterative deepening search 공부할 것.
+}
+
+void Node::Print()
+{
+    std::cout << "WARN: No Print() method implemneted!" << std::endl;
 }
 }
 }

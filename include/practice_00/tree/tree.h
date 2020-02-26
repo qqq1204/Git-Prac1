@@ -85,7 +85,7 @@ public:
     bool ForEachIDS(AbstractNodeIterableFunctor* func);
     /// \brief 
     /// 
-    void Print();
+    virtual void Print();
 private:
     struct impl;
     std::unique_ptr<impl> data_;
