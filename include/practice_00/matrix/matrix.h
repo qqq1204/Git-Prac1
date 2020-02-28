@@ -23,10 +23,11 @@ public:
     /// \brief Constructor of the Matrix
     ///
     Matrix() {}
-     /// \brief Constructor of the Matrix from initialization list
-     ///
-     /// \param data initialization list
-    Matrix(const std::array<ValueType,cols*rows>& data){
+    /// \brief Constructor of the Matrix from initialization list
+    ///
+    /// \param data initialization list
+    Matrix(const std::array<ValueType, cols * rows> &data)
+    {
         std::copy(data.begin(), data.end(), data_.begin());
     }
     /// \brief Copy constructor of the Matrix. this is deep copy
@@ -137,22 +138,34 @@ public:
     ///
     void SetIdentity()
     {
-        for(int i=0;i<rows;i++){
-            for(int j=0;j<cols;j++){
-                if(i==j){
-                    at(i,j)=1;
-                }else{
-                    at(i,j)=0;
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                if (i == j)
+                {
+                    at(i, j) = 1;
+                }
+                else
+                {
+                    at(i, j) = 0;
                 }
             }
         }
     }
-             
+
     /// \brief Set this matrix as zero matrix.
     ///
-    
+
     void SetZero()
     {
+        for (int i = 0; i < rows; i++)
+        {
+            for (int j = 0; j < cols; j++)
+            {
+                at(i, j) = 0;
+            }
+        }
     }
 
 private:
