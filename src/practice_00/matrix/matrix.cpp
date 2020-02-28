@@ -10,7 +10,6 @@ int main(int argc, char *argv[])
     Matrix<double, 3, 3> m2({2,1,2,1,2,1,2,1,2});
     std::cout << std::string(m1+m2) << std::endl;
     m1.SetIdentity();
-    m2.SetZero();
     std::cout << std::string(m1+m2) << std::endl;
     return 0;
 }

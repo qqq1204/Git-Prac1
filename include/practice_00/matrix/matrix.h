@@ -137,19 +137,23 @@ public:
     ///
     void SetIdentity()
     {
-        for (int i = 0; i < rows; i++)
-            for (int j = 0; j < cols; j++)
-                if (i == j) data_[cols * i + j] = 1;
-                else data_[cols * i + j] = 0;
+        for (int i = 0; i < rows; i++){
+            for (int j = 0; j < cols; j++){
+                if (i == j) {at(i,j) = 1;}
+                else {at(i,j) = 0;}
+            }
+        }
     }
              
     /// \brief Set this matrix as zero matrix.
     ///
-    void SetZero()
+    
+    /*void SetZero()
     {
-        for (unsigned int i = 0; i < cols * rows; i++)
+        for (unsigned int i = 0; i < cols * rows; i++){
             data_[i] = 0;
-    }
+        }
+    }*/
 
 private:
     /// \brief matrix elements data
