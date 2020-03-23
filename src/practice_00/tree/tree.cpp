@@ -37,6 +37,7 @@ void Node::RemoveChild(unsigned int id)
 }
 bool Node::ForEachBFS(AbstractNodeIterableFunctor *func)
 {
+    
     /// \todo queue 를 사용해 완성할 것.
 }
 bool Node::ForEachDFS(AbstractNodeIterableFunctor *func)

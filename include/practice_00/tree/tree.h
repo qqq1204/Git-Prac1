@@ -55,6 +55,8 @@ public:
     ///
     /// \return unsigned int
     unsigned int GetID();
+    
+    virtual bool operator==(Node& other)const;
     /// \brief
     ///
     void SetParent(std::shared_ptr<Node> &parent);
